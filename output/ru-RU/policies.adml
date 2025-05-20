@@ -1,0 +1,18 @@
+<policyDefinitionResources xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions">
+  <resources>
+    <stringTable>
+      <string id="ALT_System">ALT System</string>
+      <string id="ALT_Security">ALT Security</string>
+      <string id="ALT_Services">ALT Services</string>
+      <string id="ALT_SSHD">ALT SSHD</string>
+      <string id="ALT_Systemd">ALT Systemd</string>
+      <string id="ALT_Network">ALT Network</string>
+      <string id="ALT_Hardware">ALT Hardware</string>
+      <string id="ALT_Virtualization">ALT Virtualization</string>
+      <string id="SUPPORTED_AltP10">ALT Linux P10</string>
+      <string id="SUPPORTED_AltP11">ALT Linux P11</string>
+      <string id="TestPPPPP">Простая политика</string>
+      <string id="TestPPPPP_help">Описание политики</string>
+    </stringTable>
+  </resources>
+</policyDefinitionResources>

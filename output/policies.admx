@@ -1,0 +1,34 @@
+<policyDefinitions xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0">
+  <policyNamespaces>
+    <target prefix="system" namespace="BaseALT.Policies.System"/>
+  </policyNamespaces>
+  <categories>
+    <category name="ALT_System" displayName="$(string.ALT_System)"/>
+    <category name="ALT_Security" displayName="$(string.ALT_Security)"/>
+    <category name="ALT_Services" displayName="$(string.ALT_Services)"/>
+    <category name="ALT_SSHD" displayName="$(string.ALT_SSHD)"/>
+    <category name="ALT_Systemd" displayName="$(string.ALT_Systemd)"/>
+    <category name="ALT_Network" displayName="$(string.ALT_Network)"/>
+    <category name="ALT_Hardware" displayName="$(string.ALT_Hardware)"/>
+    <category name="ALT_Virtualization" displayName="$(string.ALT_Virtualization)"/>
+  </categories>
+  <resources>
+    <stringTable/>
+  </resources>
+  <supportedOn>
+    <definition name="SUPPORTED_AltP10" displayName="$(string.SUPPORTED_AltP10)"/>
+    <definition name="SUPPORTED_AltP11" displayName="$(string.SUPPORTED_AltP11)"/>
+  </supportedOn>
+  <policies>
+    <policy name="TestPPPPP" class="Machine" displayName="$(string.TestPPPPP)" explainText="$(string.TestPPPPP_help)" key="Software\BaseALT\Policies\Control" valueName="TestPPPPP">
+      <parentCategory ref="system:ALT_ALT_Security"/>
+      <supportedOn ref="system:SUPPORTED_AltP10"/>
+      <enabledValue>
+        <string>enabled</string>
+      </enabledValue>
+      <disabledValue>
+        <string>disabled</string>
+      </disabledValue>
+    </policy>
+  </policies>
+</policyDefinitions>
