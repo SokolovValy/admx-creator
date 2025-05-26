@@ -96,8 +96,7 @@ class MainWindow:
         
         # Проверяем тип политики для выбора редактора
         if policy.get("type") == "simple":
-            editor = SimplePolicyEditor(self.root)
-            # Здесь должна быть логика загрузки данных в редактор
+            editor = SimplePolicyEditor(self.root, policy_data=policy)  # Передаем данные
         else:
             self._show_complex_notice()
             return
