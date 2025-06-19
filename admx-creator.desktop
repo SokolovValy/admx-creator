@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ALT Linux Policy Editor
+Name[ru]=Редактор политик ALT Linux
+Comment=Editor for ADMX/ADML group policies
+Comment[ru]=Генератор групповых политик ADMX/ADML
+Exec=admx-creator
+Icon=admx-creator
+Terminal=false
+Type=Application
+Categories=System;Settings;
+StartupNotify=true
+Keywords=policy;admx;adml;gpo;

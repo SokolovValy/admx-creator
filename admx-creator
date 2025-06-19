@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+import sys
+import os
+from pathlib import Path
+
+# Добавляем путь к пакету в PYTHONPATH
+lib_path = Path('/usr/lib/python3/site-packages')
+sys.path.insert(0, str(lib_path))
+
+try:
+    from admx_creator.ui.main_window import MainWindow
+    from admx_creator.core.policy_loader import load_policies
+except ImportError as e:
+    print(f"Import error: {e}", file=sys.stderr)
+    sys.exit(1)
+
+def main():
+    try:
+        config = load_policies("/usr/share/admx-creator/config.yml")
+        root = tk.Tk()
+        app = MainWindow(root, config)
+        root.mainloop()
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(1)
+
+if __name__ == "__main__":
+    import tkinter as tk
+    main()
+
